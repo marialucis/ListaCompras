@@ -15,35 +15,42 @@
     <div>
         <h1 align = "center" id ="titulo"> Lista de Compras</h1>
         <br>
-        <p id="subtitulo">Insira os itens na lista </p>
-        <br>
+        <p>Selecione os Itens:</p>
     </div>
 
     <!--Inicio da Lista-->
     <!--Adicionando o metodo post para enviar/receber os dados da lista para o php-->
     <form action="dados.php" method="post"> 
-        <!--Agrupando-->
-        <fieldset>
-            <p>Selecione os Itens</p>
-            
-            <div>
+        <!--Agrupando campos-->
+        <fieldset class="grupo">
+            <div id="checkdespensa" >
+                <b id="despensa">Despensa</b><br><br> <!--Itens da despensa-->
                 <input type="checkbox" id="adocante" name="adocante" checked>
-                <label for="adocante">Adoçante</label>
-            </div>
-
-            <div>
+                <label for="adocante">Adoçante</label> <br>
                 <input type="checkbox" id="arroz" name="arroz">
-                <label for="arroz">Arroz</label>
+                <label for="arroz">Arroz</label> <br>
+                <input type="checkbox" id="biscoitos" name="biscoitos">
+                <label for="biscoitos">Biscoitos</label><br>
+                <input type="checkbox" id="cafe" name="cafe">
+                <label for="cafe">Café</label><br>
+                <input type="checkbox" id="cuscuz" name="cuscuz">
+                <label for="cuscuz">Cuscuz</label><br>
+                <input type="checkbox" id="cereal" name="cereal">
+                <label for="cereal">Cereal</label><br>
+                <input type="checkbox" id="catchup" name="catchup">
+                <label for="catchup">Catchup</label><br>
+                <input type="checkbox" id="cremeleite" name="cremeleite">
+                <label for="cremeleite">Creme de Leite</label><br>
+                <input type="checkbox" id="ervilha" name="ervilha">
+                <label for="ervilha">Ervilha</label><br>
+                <input type="checkbox" id="farofa" name="farofa">
+                <label for="farofa">Farofa</label><br>
+                <input type="checkbox" id="filtro" name="filtro">
+                <label for="filtro">Filtro de café</label><br>
             </div>
 
-            <div>
-                <input type="checkbox" id="biscoitos" name="biscoitos">
-                <label for="biscoitos">Biscoitos</label>
-            </div>
 
         </fieldset>
-
-
     </form>
     
     
