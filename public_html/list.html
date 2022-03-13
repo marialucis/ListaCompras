@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linkando o css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Titulo da pag-->
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <!--Cabecalho com titulo e subtitulo-->
+    <div>
+        <h1 align = "center" id ="titulo"> Lista de Compras</h1>
+        <br>
+        <p id="subtitulo">Insira os itens na lista </p>
+        <br>
+    </div>
+
+    <!--Inicio da Lista-->
+    <!--Adicionando o metodo post para enviar/receber os dados da lista para o php-->
+    <form action="dados.php" method="post"> 
+        <!--Agrupando-->
+        <fieldset>
+            <p>Selecione os Itens</p>
+            
+            <div>
+                <input type="checkbox" id="adocante" name="adocante" checked>
+                <label for="adocante">Adoçante</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="arroz" name="arroz">
+                <label for="arroz">Arroz</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="biscoitos" name="biscoitos">
+                <label for="biscoitos">Biscoitos</label>
+            </div>
+
+        </fieldset>
+
+
+    </form>
+    
+    
+        
+</body>
+</html>
