@@ -13,20 +13,20 @@
 <body>
     <!--Cabecalho com titulo e subtitulo-->
     <div>
-        <h1 align = "center" id ="titulo"> Lista de Compras</h1>
+        <h1 align = "center" id ="titulo"> Lista Supermercado</h1>
         <br>
-        <h2>Selecione os Itens:</h2>
+        <h3>Selecione os Itens:</h3>
     </div>
 
     <!--Inicio da Lista-->
     <!--Adicionando o metodo post para enviar/receber os dados da lista para o php-->
-    <form action="dados.php" method="post"> 
+    <form action="php/dados.php" method="post"> 
         <!--Agrupando campos-->
         <fieldset class="grupo">
+            <!--Itens da despensa-->
             <div id="checkdespensa" >
                 <b id="despensa">Despensa</b><br><br> <!--Itens da despensa-->
-                <input type="checkbox" id="adocante" name="adocante" checked>
-                <label for="adocante">Adoçante</label> <br>
+                <input type="checkbox" name="check[]" value="adocante" checked>Adoçante<br>
                 <input type="checkbox" id="arroz" name="arroz">
                 <label for="arroz">Arroz</label> <br>
                 <input type="checkbox" id="biscoitos" name="biscoitos">
@@ -70,9 +70,9 @@
             </div>
 
             <br>
-
+            <!--Itens dos frios-->
             <div id="checkfrios" >
-                <b id="frios">Frios</b><br><br> <!--Itens dos frios-->
+                <b id="frios">Frios</b><br><br> 
                 <input type="checkbox" id="carnes" name="carnes">
                 <label for="carnes"></label>Carnes<br>
                 <input type="checkbox" id="iogurte" name="iogurte">
@@ -91,18 +91,60 @@
                 <label for="queijo">Queijo</label><br>
                 <input type="checkbox" id="requeijao" name="requeijao">
                 <label for="requeijao"></label>Requijão<br>
+            </div>
+            <br>
+            <!--Itens higiene-->
+            <div id="checkhigiene" >
+                <b id="higiene">Higiene</b><br><br> 
+                <input type="checkbox" id="absorvente" name="absorvente">
+                <label for="absorvente"></label>Absorvente<br>
+                <input type="checkbox" id="barbear" name="barbear">
+                <label for="barbear"></label>Aparelho de barbear<br>
+                <input type="checkbox" id="condicionador" name="condicionador">
+                <label for="condicionador"></label>Condicionador<br>
+                <input type="checkbox" id="contonete" name="contonete">
+                <label for="contonete"></label>Contonete<br>
+                <input type="checkbox" id="cdental" name="cdental">
+                <label for="cdental">Creme dental</label><br>
+                <input type="checkbox" id="chidratante" name="chidratante">
+                <label for="chidratante">Creme Hidrantante</label><br>
+                <input type="checkbox" id="desodorante" name="desodorante">
+                <label for="desodorante">Desodorante</label><br>
+                <input type="checkbox" id="escovadente" name="escovadente">
+                <label for="escovadente">Escova de dente</label><br>
+                <input type="checkbox" id="fiodental" name="fiodental">
+                <label for="fiodental"></label>Fio dental<br>
+                <input type="checkbox" id="sabonete" name="sabonete">
+                <label for="sabonete"></label>Sabonete<br>
+                <input type="checkbox" id="shampoo" name="shampoo">
+                <label for="shampoo"></label>Shampoo<br>
+
+            </div>
+            <br>
+            <!--Itens limpeza-->
+            <div id="checklimpeza" >
+                <b id="higiene">Limpeza</b><br><br> 
+                <input type="checkbox" id="asanitaria" name="asanitaria">
+                <label for="asanitaria"></label>Água sanitária<br>
+                <input type="checkbox" id="amaciante" name="amaciante">
+                <label for="amaciante"></label>Amaciante<br>
+                <input type="checkbox" id="detergentec" name="detergentec">
+                <label for="detergentec"></label>Detergente de cozinha<br>
+                
 
             </div>
             <br>
             <br>
-            <!--botao concluir-->
-                <input type="button" value="Concluir Lista">
+            
         </fieldset>
+        <!--botao concluir-->
+        <input type="submit" value="Concluir"/>
     </form>
     <br>
     <br>
     <br>
     <br>
+
    <!--Rodape da pagina--> 
   <footer>
         <h6>&COPY;Copyright 2022 - CompreList - Todos os direitos reservados</h6>
